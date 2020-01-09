@@ -3,8 +3,89 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
+html {
+  font-size: 18px;
+}
 
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-upper-box {
+  height: 40vh;
+  width: 100vw;
+  background-color: #1c5380;
+  position: relative;
+}
+
+.page-items {
+  position: absolute;
+  top: 15%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  /* position: absolute;
+  top: 15%; */
+  border: 2px solid black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+}
+
+#login {
+  border: 1px solid #06365f;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../images/bgtile.png");
+  padding: 1em;
+}
+
+.content {
+  border: 2px solid black;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 60%;
+}
+
+.top-images {
+  border: 1px solid white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-image: url("../images/frame.png");
+  background-size: cover;
+  border: 1px solid wheat;
+  padding: 2em;
+}
+
+.text > h1 {
+  width: 60%;
+  line-height: 1.4;
+  color: #06365f;
+  font-size: 2em;
+}
+
+.text > p {
+  width: 70%;
+}
+.stores {
 }
